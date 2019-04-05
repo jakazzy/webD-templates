@@ -1,0 +1,19 @@
+body {
+    background-color: #2b2b2b;
+    color: #fff;
+}
+
+header #name {
+    float: right;
+}
+
+header ul {
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-left: 0;
+    float: right;
+}
+
+header .item {
+    display: inline;
+}
