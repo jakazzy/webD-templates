@@ -1,19 +1,141 @@
 body {
     background-color: #2b2b2b;
     color: #fff;
+    margin: 0;
 }
 
-header #name {
-    float: right;
+header {
+    height: 70px;
+    text-align: center;
+    border: 1px solid red;
 }
 
-header ul {
-    margin-bottom: 0;
+header ul#menu {
+    margin: 0;
+    padding: 0;
+}
+
+header ul#menu>li {
+    float: left;
+    margin-right: 300px;
+    list-style-type: none;
+    font-size: 20px;
+}
+
+header ul#menu>li:nth-child(1) {
+    margin-right: 475px;
+}
+
+header ul#menu>li:nth-child(3) {
+    margin-right: 0px;
+    margin-left: 140px;
+}
+
+span#name-tag {
+    font-size: 35px;
+}
+
+span#name-text {
+    display: block;
+}
+
+header ul#menu>li a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+header #social-nav li {
+    float: left;
+    margin-right: 2px;
+    list-style-type: none;
+    /* add socialmedia images */
+    width: 30px;
+    height: 30px;
+    background: url(images/logo-sprite.png) no-repeat;
+    text-indent: -10000px;
+}
+
+header #social-nav li:nth-child(2) {
+    background-position: -40px 0;
+}
+
+header #social-nav li:nth-child(3) {
+    background-position: -80px 0;
+}
+
+header #social-nav li:nth-child(4) {
+    background-position: -120px 0;
+}
+
+header #social-nav li a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+header:after {
+    content: "";
+    clear: both;
+    display: block;
+    /* border: 1px solid blue; */
+}
+
+.wrapper {
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    height: 290px;
+}
+
+#intro {
+    border: 1px solid yellow;
+    position: relative;
+}
+
+.container #banner-title {
+    font-size: 70px;
     margin-top: 0;
-    padding-left: 0;
-    float: right;
+    margin-bottom: 0;
 }
 
-header .item {
-    display: inline;
+.underline {
+    height: 1px;
+    width: 150px;
+    border-top: 2px solid yellow;
+    position: absolute;
+    right: 593px;
+    margin-top: 5px;
+}
+
+.round {
+    border: 2px solid yellow;
+    height: 12px;
+    width: 12px;
+    position: absolute;
+    top: 78px;
+    left: 677px;
+    border-radius: 50%;
+}
+
+.wrapper p {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.discover-button {
+    width: 153px;
+    height: 40px;
+    border: 1px solid #fff;
+    display: block;
+    margin: 0 auto;
+    text-decoration: none;
+    padding: 10px;
+    color: #fff;
+    box-sizing: border-box;
+    font-size: 20px;
+    font-weight: bold;
 }
