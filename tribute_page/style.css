@@ -83,12 +83,16 @@ header:after {
     /* border: 1px solid blue; */
 }
 
+section {
+    margin: 30px;
+}
+
 .wrapper {
     max-width: 960px;
     width: 100%;
     margin: 0 auto;
     text-align: center;
-    height: 290px;
+    height: 350px;
 }
 
 #intro {
@@ -138,4 +142,61 @@ header:after {
     box-sizing: border-box;
     font-size: 20px;
     font-weight: bold;
+}
+
+#navigation-container {
+    border: 1px solid blue;
+    position: relative;
+}
+
+#navigation-container:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.container {
+    width: 45%;
+    height: 350px;
+    float: left;
+}
+
+blockquote {
+    font-style: italic;
+    font-size: 23px;
+    font-weight: lighter;
+}
+
+blockquote span {
+    font-size: 40px;
+}
+
+.second-container {
+    border-left: 1px solid green;
+    position: absolute;
+    right: 5%;
+}
+
+.second-container li a {
+    box-sizing: border-box;
+    text-decoration: none;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border: 1px solid blue;
+    margin-bottom: 35px;
+    padding-top: 5px;
+    text-align: center;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.second-container li {
+    list-style-type: none;
+    color: #fff;
+}
+
+#next {
+    position: absolute;
+    text-align: center;
 }
