@@ -161,6 +161,11 @@ section {
     float: left;
 }
 
+.first-container {
+    background: url(images/serena-williams-1_burned.png) no-repeat;
+    background-color: black;
+}
+
 blockquote {
     font-style: italic;
     font-size: 23px;
