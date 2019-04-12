@@ -14,9 +14,9 @@ form {
     line-height: 1.1;
 }
 
-.form-input {
+.form-input input[type="text"],
+.form-input input[type="password"] {
     width: 100%;
-    display: block;
     font-size: 14px;
     color: #555;
     line-height: 1.4;
