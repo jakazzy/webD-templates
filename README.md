@@ -3,3 +3,4 @@ This is a collection of templates built with pure love![Love](https://www.google
 1. Sample simple website
 2. Blog template
 3. Simple Log in page.[view it here](http://login_page.surge.sh)
+4. A simple art gallery.[view it here](http://art_gallery.surge.sh)
