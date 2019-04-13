@@ -1,3 +1,20 @@
+/*your css file have errors and duplicates
+ I have highlighted and edited some of the errors and duplicates
+ with comments.
+ 
+
+ I suggest you update the entire css file.
+ 
+ symtoms
+ 1.Duplicates
+ 2. Abuse of css margin property (learn about the diff between margins and padding)
+ 3. Abuse of css id (use classes when children is greater than one);
+
+ I will be keeping an eye out for this project
+ Good Luck
+
+*/
+
 * {
     box-sizing: border-box;
 }
@@ -31,18 +48,18 @@ body {
 
 #quote,
 footer {
-    margin: 0 auto;
+    /*margin: 0 auto; its a duplicate*/ 
     width: 90%;
     height: 70px;
-    margin: 40px auto;
+    margin: 40px auto;/*updates the margin at line 40*/
     text-align: center;
     border: 1px solid #2e6da4;
     background-color: #337ab7;
     color: #fff;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 400px;
-    font-size: 140%;
-    border-radius: 5px;
+    /*font-weight: 400px; wrong format*/
+    font-size: 140%;/*updates the h2 tag size #quote h2*/
+    /*border-radius: 5px;*/
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
     text-transform: capitalize;
 }
@@ -60,7 +77,7 @@ footer {
     width: 90%;
     margin: 2% auto;
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: repeat(3, auto) /*auto auto auto*/;
 }
 
 .card {
@@ -81,10 +98,12 @@ footer {
 
 img {
     vertical-align: middle;
-    margin-top: 4%;
+    padding-top: 4%;
 }
 
+/* 
 img-resize {
     max-width: 100%;
     height: auto;
-}
+} 
+doesnt have purpose*/
