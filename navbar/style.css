@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    padding: 10px 0;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    color: #888888;
+    border: 1px solid#888888;
+}
+
+#logo,
+#login {
+    width: 11%;
+    padding-top: 7px;
+}
+
+nav {
+    width: 38%
+}
+
+form {
+    width: 30%
+}
+
+#navbar {
+    margin: 0
+}
+
+#navbar li {
+    list-style-type: none;
+    float: left;
+    text-align: center;
+    width: 20%;
+    padding-top: 7px;
+}
+
+a {
+    text-decoration: none;
+    color: #888888;
+}
+
+a:active,
+a:hover {
+    color: #ff4500;
+}
+
+.input-group {
+    display: inline-block;
+}
+
+input[type="search"] {
+    width: 300px;
+    font-size: 18px;
+    line-height: 1.1em;
+    padding: 8px 10px;
+    color: #e7e7e7;
+    border: 1px solid #e7e7e7;
+    border-radius: 5px;
+}
+
+#text {
+    color: #ff4500;
+}
+
+#logo {
+    font-family: 'Merienda One', cursive;
+}
+
+header button {
+    padding: 5px 10px;
+    border-radius: 2px;
+    border: 1px solid #ff4500;
+    background-color: #ff4500;
+    color: #fff;
+}
