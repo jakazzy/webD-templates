@@ -1,10 +1,26 @@
 /* Center the container of the login form */
 
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #63738a;
+}
+
 .container {
-    width: 30vw;
-    height: 55vh;
-    border: 1px solid green;
+    width: 28vw;
+    height: 58vh;
+    border-radius: 5px;
+    background-color: #fff;
     margin: 0 auto;
+}
+
+
+/* style the sign up text */
+
+h3 {
+    padding-top: 5px;
+    color: #333;
+    font-weight: bold;
+    font-size: 25px;
 }
 
 
@@ -27,7 +43,8 @@ button[type="submit"] {
     width: 80%;
     border: 1px solid #999;
     height: 5vh;
-    margin-bottom: 1vh;
+    margin-bottom: 3vh;
+    border-radius: 2px;
 }
 
 
@@ -38,10 +55,14 @@ button[type="submit"] {
     padding-left: 60px;
 }
 
-.input-group span {
+
+/* style font awesome */
+
+.input-group .font-awesome {
     position: absolute;
     width: 42px;
     height: 37px;
+    border-radius: 2px;
     background-color: #999;
 }
 
@@ -70,7 +91,27 @@ button[type="submit"] {
     text-align: center;
 }
 
+.check {
+    margin: 10px 0;
+}
 
-/* .checkbox{
-    margin: 
-} */
+.check a {
+    text-decoration: none;
+}
+
+.form-button button {
+    background-color: dodgerblue;
+    color: #fff;
+    font-size: 20px;
+    /* text-align: unset; */
+    /* background-image: linear-gradient(to right, blue, grey); */
+}
+
+.button-text {
+    padding-right: 30px;
+}
+
+.login-text {
+    margin-top: 5px;
+    color: yellow;
+}
