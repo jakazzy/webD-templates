@@ -1,0 +1,76 @@
+/* Center the container of the login form */
+
+.container {
+    width: 30vw;
+    height: 55vh;
+    border: 1px solid green;
+    margin: 0 auto;
+}
+
+
+/* the avatar image*/
+
+.avatar {
+    width: 6vw;
+    height: 12vh;
+    border: 1px solid green;
+    border-radius: 50%;
+}
+
+
+/* style input form */
+
+.input-group input[type="text"],
+.input-group input[type="email"],
+.input-group input[type="password"],
+button[type="submit"] {
+    width: 80%;
+    border: 1px solid #999;
+    height: 5vh;
+    margin-bottom: 1vh;
+}
+
+
+/* style the span */
+
+.input-group {
+    position: relative;
+    padding-left: 60px;
+}
+
+.input-group span {
+    position: absolute;
+    width: 42px;
+    height: 37px;
+    background-color: #999;
+}
+
+::placeholder {
+    /* text-align: center; */
+    font-size: 1.3em;
+    padding: 90px;
+    text-transform: capitalize;
+}
+
+.fa {
+    padding-top: 8px;
+    padding-left: 8px;
+    font-size: 20px;
+}
+
+.fa-check {
+    position: absolute;
+    left: 3px;
+    bottom: 12px;
+    color: white;
+    font-size: 8px;
+}
+
+.center-text {
+    text-align: center;
+}
+
+
+/* .checkbox{
+    margin: 
+} */
