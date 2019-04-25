@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    max-width: 100%;
+    border-bottom: 1px solid red;
+    justify-content: center;
+    padding-bottom: 1%;
+}
+
+.group {
+    list-style: none;
+    padding: 1%;
+    font-size: 1.2rem;
+    border: 1px solid blue;
+    width: 20%;
+    text-align: center;
+    margin: 1%;
+    border-radius: 50px;
+}
+
+.group a {
+    display: block;
+    text-decoration: none;
+}
+
+.group::before {
+    content: "";
+}
