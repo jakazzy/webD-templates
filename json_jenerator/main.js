@@ -43,3 +43,10 @@ const renderResponse = (jsonResponse) => {
     const jsonSelection = Math.floor(Math.random() * 10);
     display.innerHTML = `<pre>${formatJson(jsonResponse[jsonSelection])} </pre>`;
 }
+
+const changeButton = () => {
+    const newText = Math.floor(Math.random() * 7);
+    jsonButton.innerHTML = `${collection[newText]}!`;
+}
+
+jsonButton.addEventListener('click', generateJson);
