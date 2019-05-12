@@ -4,19 +4,21 @@ module.exports = {
     entry: path.resolve(__dirname, 'src') + '/app/index.js',
     output: {
         path: path.resolve(__dirname, 'dist') + '/app',
-        filename: bundle.js,
+        filename: 'bundle.js',
         publicPath: '/app/'
     },
     module: {
-        loaders: [{
-                test: /.\js$/,
-                loader: 'babel-loader',
+        rules: [{
+                test: /\.js$/,
                 include: path.resolve(__dirname, 'src'),
-                query: ['react', 'es2015']
+                loader: 'babel-loader',
+                query: {
+                    presets: ["@babel/preset-react", "@babel/preset-env", ]
+                }
             },
             {
-                test: /.\css$/,
-                loader: 'style-loader! css-loader'
+                test: /\.css$/,
+                loader: 'style-loader!css-loader'
             }
         ]
     }
