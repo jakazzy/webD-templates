@@ -7,4 +7,18 @@ module.exports = {
         fileName: bundle.js,
         publicPath: '/app/'
     },
+    module: {
+        loaders: [{
+                test: /.\js$/,
+                loader: 'babel-loader',
+                include: path.resolve(__dirname, 'src'),
+                query: ['react', 'es2015']
+            },
+            {
+                test: /.\css$/,
+                loader: 'style-loader! css-loader'
+            }
+        ]
+    }
+
 }
