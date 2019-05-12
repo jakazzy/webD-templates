@@ -1,11 +1,21 @@
 {
-  "name": "todoapp_react",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "me",
-  "license": "ISC"
+    "name": "todoapp_react",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "run build",
+        "build": "webpack -d && webpack-dev-server --content-base /src --inline --hot --port 1234"
+    },
+    "author": "me",
+    "license": "ISC",
+    "dependencies": {
+        "babel-core": "^6.26.3",
+        "babel-loader": "^8.0.6",
+        "babel-preset-es2015": "^6.24.1",
+        "babel-preset-react": "^6.24.1",
+        "react": "^16.8.6",
+        "react-dom": "^16.8.6"
+    }
 }
