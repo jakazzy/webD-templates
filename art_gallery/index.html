@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 </head>
 
-<body>
+<body onload="typeWriter()">
     <header>
         <div id="title">
             <h1>Art <span>Gallery</span></h1>
@@ -20,7 +20,7 @@
     </header>
     <section>
         <div id="quote">
-            <h2>Art, the space in which freedom tests its wings</h2>
+            <h2 id="text"></h2>
 
         </div>
         <div class="content">
@@ -66,6 +66,21 @@
     <footer>
         supported by Akanfuo @2019
     </footer>
+
+    <script>
+        let i = 0;
+        const text = "Art, the space in which freedom tests its wings";
+        const speed = 100;
+
+        function typeWriter() {
+            if (i < text.length) {
+                document.getElementById("text").innerHTML += text.charAt(i);
+                i++;
+                setTimeout(typeWriter, speed);
+            }
+
+        }
+    </script>
 </body>
 
 </html>
